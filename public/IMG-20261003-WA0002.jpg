@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="woodCanopy" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C59B4E" />
+      <stop offset="50%" stop-color="#A57D36" />
+      <stop offset="100%" stop-color="#7B581F" />
+    </linearGradient>
+    <linearGradient id="pavement" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#64748B" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="25" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Bright sky background visible through canopy -->
+  <rect width="1200" height="900" fill="#E2E8F0" />
+
+  <!-- Massive Curved Wooden Canopy Ceiling Structure -->
+  <path d="M0 0 L 1200 0 L 1200 380 Q 950 280, 600 360 Q 250 280, 0 380 Z" fill="url(#woodCanopy)" />
+  
+  <!-- Wooden Architectural Vertical Slats Pattern -->
+  <g stroke="#614313" stroke-width="4" opacity="0.4">
+    <line x1="50" y1="0" x2="50" y2="370" />
+    <line x1="120" y1="0" x2="120" y2="350" />
+    <line x1="190" y1="0" x2="190" y2="330" />
+    <line x1="260" y1="0" x2="260" y2="310" />
+    <line x1="330" y1="0" x2="330" y2="310" />
+    <line x1="400" y1="0" x2="400" y2="320" />
+    <line x1="470" y1="0" x2="470" y2="340" />
+    <line x1="540" y1="0" x2="540" y2="360" />
+    <line x1="610" y1="0" x2="610" y2="360" />
+    <line x1="680" y1="0" x2="680" y2="340" />
+    <line x1="750" y1="0" x2="750" y2="320" />
+    <line x1="820" y1="0" x2="820" y2="310" />
+    <line x1="890" y1="0" x2="890" y2="310" />
+    <line x1="960" y1="0" x2="960" y2="330" />
+    <line x1="1030" y1="0" x2="1030" y2="350" />
+    <line x1="1100" y1="0" x2="1100" y2="370" />
+  </g>
+
+  <!-- Giant Left and Right Canopy Column Flares -->
+  <path d="M 120 380 Q 200 480, 200 620 L 140 620 Q 140 480, 50 380 Z" fill="#A57D36" />
+  <path d="M 1080 380 Q 1000 480, 1000 620 L 1060 620 Q 1060 480, 1150 380 Z" fill="#A57D36" />
+
+  <!-- Blue Airport Signboard on Right: TARIFF PLANS -->
+  <rect x="910" y="440" width="140" height="180" rx="8" fill="#1D4ED8" stroke="#1E40AF" stroke-width="2" />
+  <rect x="920" y="450" width="120" height="40" rx="4" fill="#FFFFFF" />
+  <text x="980" y="475" text-anchor="middle" fill="#1D4ED8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="800">AIRPORT</text>
+  <text x="980" y="520" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700">TARIFF PLANS</text>
+
+  <!-- Smooth Paved Airport Driveway -->
+  <path d="M 0 540 L 1200 540 L 1200 900 L 0 900 Z" fill="url(#pavement)" />
+  <!-- White lane markings -->
+  <polygon points="260,620 280,620 310,650 280,650" fill="#FFFFFF" opacity="0.8" />
+  <polygon points="260,680 290,680 330,720 290,720" fill="#FFFFFF" opacity="0.8" />
+
+  <!-- White Taxi Front View Parked Under Canopy -->
+  <g filter="url(#shadow3)">
+    <!-- Roof rack (silver) -->
+    <rect x="440" y="480" width="320" height="10" rx="4" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2" />
+
+    <!-- Windshield with blue gradient tint -->
+    <path d="M 430 500 L 770 500 L 805 630 L 395 630 Z" fill="#1E293B" stroke="#0F172A" stroke-width="2" />
+    <path d="M 430 500 L 770 500 L 780 540 L 420 540 Z" fill="#3B82F6" opacity="0.7" />
+
+    <!-- White Body Front Profile -->
+    <path d="M 380 630 C 440 625, 760 625, 820 630 L 825 790 C 760 805, 440 805, 375 790 Z" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2" />
+
+    <!-- Grille & Headlights -->
+    <path d="M 470 635 L 730 635 L 720 695 L 480 695 Z" fill="#18181B" />
+    <polygon points="600,650 610,660 602,660 608,670 596,670 590,660 598,660" fill="#E2E8F0" />
+    <path d="M 375 635 L 455 635 L 445 690 L 385 680 Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2" />
+    <path d="M 825 635 L 745 635 L 755 690 L 815 680 Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2" />
+
+    <!-- Yellow Commercial Number Plate: ML 05 R 7332 -->
+    <rect x="515" y="735" width="170" height="38" rx="4" fill="#FACC15" stroke="#CA8A04" stroke-width="1.5" />
+    <text x="530" y="759" fill="#111111" font-family="monospace" font-size="11" font-weight="bold">IND</text>
+    <text x="610" y="760" text-anchor="middle" fill="#111111" font-family="'Plus Jakarta Sans', monospace" font-size="18" font-weight="800" letter-spacing="1">ML 05 R 7332</text>
+
+    <!-- Wheels -->
+    <rect x="390" y="780" width="55" height="50" rx="8" fill="#18181B" />
+    <rect x="755" y="780" width="55" height="50" rx="8" fill="#18181B" />
+  </g>
+</svg>

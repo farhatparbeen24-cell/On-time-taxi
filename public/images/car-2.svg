@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D7DCDD" />
+      <stop offset="60%" stop-color="#C6CDCF" />
+      <stop offset="100%" stop-color="#B8C1C3" />
+    </linearGradient>
+    <linearGradient id="carBody2" x1="0" y1="0" x2="1" y2="0.8">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="70%" stop-color="#F1F4F5" />
+      <stop offset="100%" stop-color="#D8DEE0" />
+    </linearGradient>
+    <linearGradient id="tarp2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E4CB0" />
+      <stop offset="100%" stop-color="#0E2D77" />
+    </linearGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="-10" dy="30" stdDeviation="25" flood-color="#262118" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Sky & Misty Hill -->
+  <rect width="1200" height="900" fill="url(#sky2)" />
+  <path d="M0 580 Q 350 500, 700 560 L 1200 620 L 1200 900 L 0 900 Z" fill="#6B7759" opacity="0.3" />
+  <path d="M0 640 Q 400 580, 800 640 L 1200 690 L 1200 900 L 0 900 Z" fill="#8C7D68" />
+  <path d="M0 700 Q 250 660, 450 710 L 0 850 Z" fill="#586542" opacity="0.6" />
+
+  <!-- Car Group 3/4 View -->
+  <g filter="url(#shadow2)">
+    <!-- Roof Carrier with Blue Tarp Pack -->
+    <path d="M 370 330 C 375 320, 395 315, 520 315 C 640 315, 655 320, 660 330 L 670 375 C 670 385, 660 390, 650 390 L 380 390 C 370 390, 360 385, 360 375 Z" fill="url(#tarp2)" />
+    <rect x="350" y="388" width="330" height="12" rx="4" fill="#333333" stroke="#555555" stroke-width="1.5" />
+    <line x1="410" y1="400" x2="410" y2="425" stroke="#333333" stroke-width="6" />
+    <line x1="610" y1="400" x2="610" y2="425" stroke="#333333" stroke-width="6" />
+
+    <!-- 3/4 Body Profile: Side + Front -->
+    <!-- Car side and front panel -->
+    <path d="M 330 435 C 380 430, 620 425, 690 440 L 800 560 C 820 580, 830 610, 830 650 L 805 770 L 490 810 L 285 710 C 275 690, 275 620, 290 560 Z" fill="url(#carBody2)" stroke="#CBD5E1" stroke-width="2" />
+
+    <!-- Side Windows -->
+    <path d="M 345 445 L 480 440 L 480 540 L 330 540 Z" fill="#1E293B" />
+    <path d="M 495 440 L 620 440 L 630 540 L 495 540 Z" fill="#1E293B" />
+    
+    <!-- Windshield (angled) -->
+    <path d="M 635 440 L 705 445 L 785 555 L 645 550 Z" fill="#243142" />
+    <path d="M 635 440 L 705 445 L 710 475 L 638 470 Z" fill="#3B82F6" opacity="0.6" />
+
+    <!-- Side Door Trim Stripe & PERFORMANCE Decal -->
+    <line x1="305" y1="560" x2="630" y2="560" stroke="#1E293B" stroke-width="3" />
+    <text x="350" y="685" fill="#475569" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="700" letter-spacing="1">PERFORMANCE</text>
+    <line x1="310" y1="695" x2="480" y2="695" stroke="#334155" stroke-width="4" />
+
+    <!-- Angled Front Grille & Headlight -->
+    <path d="M 670 635 L 795 625 L 815 675 L 685 685 Z" fill="#18181B" />
+    <polygon points="765,640 772,648 766,648 770,656 761,656 757,648 763,648" fill="#FFFFFF" />
+    <path d="M 795 620 L 830 635 L 820 680 L 785 665 Z" fill="#E2E8F0" stroke="#94A3B8" stroke-width="2" />
+
+    <!-- Front Bumper & Yellow License Plate -->
+    <rect x="710" y="715" width="105" height="30" rx="3" fill="#FACC15" stroke="#CA8A04" stroke-width="1.5" />
+    <text x="762" y="735" text-anchor="middle" fill="#111111" font-family="'Plus Jakarta Sans', monospace" font-size="13" font-weight="800">ML 05 R 7332</text>
+
+    <!-- Wheels (front and rear side wheels) -->
+    <!-- Front Wheel -->
+    <circle cx="510" cy="780" r="50" fill="#18181B" stroke="#475569" stroke-width="4" />
+    <circle cx="510" cy="780" r="26" fill="#64748B" />
+    <!-- Rear Wheel -->
+    <circle cx="305" cy="700" r="38" fill="#18181B" stroke="#475569" stroke-width="3" />
+    <circle cx="305" cy="700" r="18" fill="#64748B" />
+  </g>
+</svg>

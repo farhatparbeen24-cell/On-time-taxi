@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="sunsetSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#475569" />
+      <stop offset="35%" stop-color="#7C8899" />
+      <stop offset="65%" stop-color="#D97706" />
+      <stop offset="85%" stop-color="#EA580C" />
+      <stop offset="100%" stop-color="#C2410C" />
+    </linearGradient>
+    <linearGradient id="sunsetRoad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <filter id="shadow4" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="-10" dy="25" stdDeviation="20" flood-color="#111827" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Glowing Sunset Sky -->
+  <rect width="1200" height="900" fill="url(#sunsetSky)" />
+
+  <!-- Setting Sun on Horizon -->
+  <circle cx="580" cy="500" r="32" fill="#FEF08A" />
+  <circle cx="580" cy="500" r="54" fill="#FDE047" opacity="0.4" />
+
+  <!-- Distant hill silhouetted against twilight -->
+  <path d="M0 505 Q 300 480, 580 500 T 1200 495 L 1200 900 L 0 900 Z" fill="#292524" />
+
+  <!-- Asphalt Road Stretching Forward -->
+  <polygon points="500,510 570,510 1150,900 0,900" fill="url(#sunsetRoad)" />
+  <!-- White dashed centerline on road -->
+  <line x1="535" y1="520" x2="180" y2="900" stroke="#F8FAFC" stroke-width="4" stroke-dasharray="25 20" opacity="0.8" />
+
+  <!-- Utility Power Pole with Cables on Right -->
+  <line x1="795" y1="210" x2="795" y2="570" stroke="#1C1917" stroke-width="10" />
+  <!-- Pole Crossbeams -->
+  <line x1="770" y1="230" x2="820" y2="230" stroke="#1C1917" stroke-width="6" />
+  <line x1="765" y1="250" x2="825" y2="250" stroke="#1C1917" stroke-width="6" />
+  <!-- Overhead Power Lines crossing sky -->
+  <line x1="0" y1="200" x2="770" y2="230" stroke="#1C1917" stroke-width="1.5" opacity="0.7" />
+  <line x1="0" y1="240" x2="770" y2="250" stroke="#1C1917" stroke-width="1.5" opacity="0.7" />
+  <line x1="795" y1="230" x2="1200" y2="150" stroke="#1C1917" stroke-width="1.5" opacity="0.7" />
+  <line x1="795" y1="250" x2="1200" y2="200" stroke="#1C1917" stroke-width="1.5" opacity="0.7" />
+
+  <!-- White Taxi on Road in Sunset Light -->
+  <g filter="url(#shadow4)" transform="translate(100, 20)">
+    <!-- Roof carrier rack -->
+    <rect x="420" y="525" width="230" height="8" rx="3" fill="#333333" stroke="#666666" stroke-width="1" />
+
+    <!-- Car Body Profile bathed in golden hour warm light -->
+    <path d="M 400 550 C 440 545, 630 540, 680 555 L 750 630 C 765 650, 770 670, 770 700 L 745 790 L 415 820 L 375 730 C 370 700, 370 640, 380 600 Z" fill="#FFFDF7" stroke="#E2E8F0" stroke-width="2" />
+
+    <!-- Windows reflecting sunset -->
+    <path d="M 425 555 L 530 555 L 535 635 L 420 635 Z" fill="#1E293B" />
+    <path d="M 545 555 L 635 555 L 685 635 L 545 635 Z" fill="#1E293B" />
+    <!-- Warm sunset glow on window edge -->
+    <line x1="420" y1="635" x2="685" y2="635" stroke="#F59E0B" stroke-width="2" opacity="0.8" />
+
+    <!-- Front Grille & Headlight -->
+    <path d="M 640 690 L 740 680 L 755 720 L 650 730 Z" fill="#18181B" />
+    <polygon points="710,695 718,702 712,702 716,710 707,710 703,702 709,702" fill="#FFFFFF" />
+    <path d="M 740 675 L 770 690 L 760 725 L 730 715 Z" fill="#FEF08A" stroke="#CA8A04" stroke-width="1.5" />
+
+    <!-- Yellow Commercial Number Plate: ML 05 R 7332 -->
+    <rect x="660" y="750" width="115" height="28" rx="3" fill="#FACC15" stroke="#CA8A04" stroke-width="1.5" />
+    <text x="717" y="769" text-anchor="middle" fill="#111111" font-family="'Plus Jakarta Sans', monospace" font-size="14" font-weight="800">ML 05 R 7332</text>
+
+    <!-- Wheels on Road -->
+    <circle cx="445" cy="800" r="44" fill="#18181B" stroke="#475569" stroke-width="3" />
+    <circle cx="445" cy="800" r="22" fill="#64748B" />
+    <circle cx="735" cy="790" r="38" fill="#18181B" stroke="#475569" stroke-width="3" />
+    <circle cx="735" cy="790" r="18" fill="#64748B" />
+  </g>
+</svg>
